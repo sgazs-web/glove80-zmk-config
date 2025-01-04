@@ -234,12 +234,12 @@
 
         num {
             bindings = <
-&trans  &trans     &trans         &trans       &trans                                                                                           &trans                  &trans             &trans        &trans     &trans
-&trans  &trans     &trans         &trans       &trans                 &trans                                                            &trans  &trans                  &trans             &trans        &trans     &trans
-&trans  &trans     &kp PERCENT    &kp CARET    &trans                 &trans                                                            &trans  &trans                  &trans             &kp POUND     &trans     &trans
-&trans  &kp MINUS  &hm LCTRL DOT  &hm LALT N0  &hm LEFT_GUI NUMBER_1  &trans                                                            &trans  &hm RIGHT_GUI NUMBER_2  &hm RALT NUMBER_3  &hm RCTRL N4  &kp EQUAL  &trans
-&trans  &none      &kp PLUS       &kp N5       &kp N6                 &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &kp N7                  &kp N8             &kp N9        &trans     &trans
-&trans  &trans     &trans         &trans       &trans                         &sr LEFT_SHIFT 0  &trans  &trans  &trans  &trans  &trans          &trans                  &trans             &trans        &trans     &trans
+&trans  &trans  &trans        &trans        &trans                                                                              &trans       &trans     &trans     &trans  &trans
+&trans  &trans  &trans        &trans        &trans        &trans                                                        &trans  &trans       &trans     &trans     &trans  &trans
+&trans  &trans  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &trans                                                        &trans  &trans       &trans     &trans     &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans                                                        &trans  &kp PERCENT  &kp CARET  &kp POUND  &trans  &trans
+&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans     &trans  &trans
+&trans  &trans  &trans        &trans        &trans                &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans          &trans       &trans     &trans     &trans  &trans
             >;
         };
 
