@@ -177,47 +177,19 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        combo_sys {
-            bindings = <&to 4>;
-            key-positions = <41 42 43>;
-            timeout-ms = <30>;
-        };
-
-        combo_caps {
-            bindings = <&caps_word>;
-            key-positions = <59 60 61>;
-            timeout-ms = <30>;
-        };
-
-        leftH {
-            bindings = <&to 5>;
-            key-positions = <38 37 36>;
-            timeout-ms = <30>;
-            layers = <0>;
-        };
-
-        to_base {
-            bindings = <&to 0>;
-            key-positions = <36 37 38>;
-            timeout-ms = <30>;
-            layers = <5>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
 
         alpha1 {
             bindings = <
-&to 0       &trans    &to 7         &trans            &trans                                                                                                                     &trans             &trans          &trans           &trans    &trans
-&trans      &trans    &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT      &trans                                                                                             &trans  &kp C_VOLUME_DOWN  &kp C_MUTE      &kp C_VOLUME_UP  &trans    &trans
-&trans      &trans    &hm LCTRL L   &hm LALT D        &hm LEFT_GUI W  &trans                                                                                             &trans  &hm RIGHT_GUI Y    &hm LEFT_ALT F  &hm RCTRL U      &trans    &trans
-&trans      &hl 2 A   &hl 3 S       &mt X E           &hl 4 R         &trans                                                                                             &trans  &hl 4 N            &mt K I         &hl 3 O          &hl 2 T   &trans
-&trans      &kp J     &mt Q G       &mt Z C           &mt K P         &trans  &hl 6 TAB               &kp LEFT_SHIFT  &trans     &trans     &trans          &key_repeat  &trans  &mt Q H            &mt X M         &mt Z V          &kp B     &trans
-&magic 8 0  &kp DOWN  &kp UP_ARROW  &kp LEFT          &kp RIGHT               &kpsk LEFT_SHIFT SPACE  &kp LCTRL       &kp SPACE  &kp SPACE  &kp LEFT_SHIFT  &msl 1               &kp LEFT           &kp RIGHT       &kp UP           &kp DOWN  &trans
+&to 0       &trans    &to 7         &trans            &trans                                                                                                                     &trans             &trans          &trans           &trans      &trans
+&trans      &trans    &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT      &trans                                                                                             &trans  &kp C_VOLUME_DOWN  &kp C_MUTE      &kp C_VOLUME_UP  &trans      &trans
+&trans      &trans    &hm LCTRL L   &hm LALT D        &hm LEFT_GUI W  &trans                                                                                             &trans  &hm RIGHT_GUI Y    &hm LEFT_ALT F  &hm RCTRL U      &caps_word  &trans
+&trans      &hl 2 A   &hl 3 S       &mt X E           &hl 4 R         &trans                                                                                             &trans  &hl 4 N            &mt K I         &hl 3 O          &hl 2 T     &trans
+&trans      &kp J     &mt Q G       &mt Z C           &mt K P         &trans  &hl 6 TAB               &kp LEFT_SHIFT  &trans     &trans     &trans          &key_repeat  &trans  &mt Q H            &mt X M         &mt Z V          &kp B       &trans
+&magic 8 0  &kp DOWN  &kp UP_ARROW  &kp LEFT          &kp RIGHT               &kpsk LEFT_SHIFT SPACE  &kp LCTRL       &kp SPACE  &kp SPACE  &kp LEFT_SHIFT  &msl 1               &kp LEFT           &kp RIGHT       &kp UP           &kp DOWN    &trans
             >;
         };
 
@@ -225,9 +197,9 @@
             bindings = <
 &trans  &trans  &trans   &trans     &trans                                                                                &trans      &trans       &trans             &trans  &trans
 &trans  &trans  &trans   &trans     &trans       &trans                                                           &trans  &trans      &trans       &trans             &trans  &trans
-&trans  &trans  &trans   &trans     &trans       &trans                                                           &trans  &kp HASH    &kp EQUAL    &kp UNDERSCORE     &trans  &trans
+&trans  &trans  &trans   &kp Z      &trans       &trans                                                           &trans  &kp HASH    &kp EQUAL    &kp UNDERSCORE     &trans  &trans
 &trans  &trans  &kp SQT  &kp TILDE  &kp AT_SIGN  &trans                                                           &trans  &kp PERIOD  &kp COMMA    &kp DOUBLE_QUOTES  &trans  &trans
-&trans  &trans  &trans   &trans     &trans       &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &kp DLLR    &kp PERCENT  &kp CARET          &trans  &trans
+&trans  &trans  &kp X    &kp K      &kp Q        &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &kp DLLR    &kp PERCENT  &kp CARET          &trans  &trans
 &trans  &trans  &trans   &trans     &trans               &msk LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans          &trans      &trans       &trans             &trans  &trans
             >;
         };
