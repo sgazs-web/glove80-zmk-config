@@ -220,9 +220,9 @@
             bindings = <
 &trans  &trans  &trans        &trans        &trans                                                                              &trans       &trans     &trans     &trans  &trans
 &trans  &trans  &trans        &trans        &trans        &trans                                                        &trans  &trans       &trans     &trans     &trans  &trans
-&trans  &trans  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &trans                                                        &trans  &trans       &trans     &trans     &trans  &trans
-&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans                                                        &trans  &kp PERCENT  &kp CARET  &kp POUND  &trans  &trans
-&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans     &trans     &trans  &trans
+&trans  &trans  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &trans                                                        &trans  &kp PERCENT  &kp CARET  &kp POUND  &trans  &trans
+&trans  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans                                                        &trans  &kp PERIOD   &kp K      &kp MINUS  &trans  &trans
+&trans  &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &kp Q        &kp X      &kp Z      &trans  &trans
 &trans  &trans  &trans        &trans        &trans                &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans          &trans       &trans     &trans     &trans  &trans
             >;
         };
